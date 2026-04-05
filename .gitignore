@@ -1,0 +1,13 @@
+.DS_Store
+
+# Python / backend
+backend/.venv/
+backend/.env
+backend/secrets/
+backend/debug_*
+__pycache__/
+*.pyc
+
+# Xcode
+DerivedData/
+TCUPortalNotification/GoogleService-Info.plist
