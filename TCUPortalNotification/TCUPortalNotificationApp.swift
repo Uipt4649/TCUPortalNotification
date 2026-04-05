@@ -17,6 +17,12 @@ import FirebaseMessaging
 import FirebaseFirestore
 #endif
 
+extension Notification.Name {
+    static let pushTokenDidUpdate = Notification.Name("pushTokenDidUpdate")
+    static let pushTokenSaveDidFail = Notification.Name("pushTokenSaveDidFail")
+    static let apnsRegistrationDidFail = Notification.Name("apnsRegistrationDidFail")
+}
+
 final class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDelegate {
     func application(
         _ application: UIApplication,
@@ -33,6 +39,7 @@ final class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCent
 #if canImport(FirebaseMessaging)
         Messaging.messaging().delegate = self
 #endif
+        DeviceTokenStore.shared.observePushPermission()
         return true
     }
 
@@ -50,7 +57,30 @@ final class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCent
     ) {
 #if canImport(FirebaseMessaging)
         Messaging.messaging().apnsToken = deviceToken
+        Messaging.messaging().token { token, error in
+            if let error {
+                NotificationCenter.default.post(
+                    name: .pushTokenSaveDidFail,
+                    object: nil,
+                    userInfo: ["message": "FCM token取得失敗: \(error.localizedDescription)"]
+                )
+                return
+            }
+            guard let token, !token.isEmpty else { return }
+            DeviceTokenStore.shared.save(fcmToken: token)
+        }
 #endif
+    }
+
+    func application(
+        _ application: UIApplication,
+        didFailToRegisterForRemoteNotificationsWithError error: Error
+    ) {
+        NotificationCenter.default.post(
+            name: .apnsRegistrationDidFail,
+            object: nil,
+            userInfo: ["message": "APNs登録失敗: \(error.localizedDescription)"]
+        )
     }
 }
 
@@ -64,10 +94,20 @@ extension AppDelegate: MessagingDelegate {
 }
 #endif
 
-private final class DeviceTokenStore {
+final class DeviceTokenStore {
     static let shared = DeviceTokenStore()
 
     private init() {}
+
+    func observePushPermission() {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, _ in
+            if granted {
+                DispatchQueue.main.async {
+                    UIApplication.shared.registerForRemoteNotifications()
+                }
+            }
+        }
+    }
 
     func save(fcmToken: String) {
 #if canImport(FirebaseFirestore)
@@ -76,7 +116,27 @@ private final class DeviceTokenStore {
             "platform": "ios",
             "updatedAt": FieldValue.serverTimestamp(),
         ]
-        Firestore.firestore().collection("device_tokens").document(fcmToken).setData(payload, merge: true)
+        Firestore.firestore().collection("device_tokens").document(fcmToken).setData(payload, merge: true) { error in
+            if let error {
+                NotificationCenter.default.post(
+                    name: .pushTokenSaveDidFail,
+                    object: nil,
+                    userInfo: ["message": "Firestore保存失敗: \(error.localizedDescription)"]
+                )
+                return
+            }
+            NotificationCenter.default.post(
+                name: .pushTokenDidUpdate,
+                object: nil,
+                userInfo: ["token": fcmToken]
+            )
+        }
+#else
+        NotificationCenter.default.post(
+            name: .pushTokenSaveDidFail,
+            object: nil,
+            userInfo: ["message": "FirebaseFirestore 未導入"]
+        )
 #endif
     }
 }

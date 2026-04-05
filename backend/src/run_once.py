@@ -84,20 +84,34 @@ def main() -> int:
     notices = scrape_result.notices
     print(f"[INFO] scraped notices: {len(notices)}")
 
-    update_portal_status(
+    status_transition = update_portal_status(
         db,
         auth_required=scrape_result.auth_required,
         reason=scrape_result.reason,
     )
 
     if scrape_result.auth_required:
+        if status_transition.get("became_auth_required", False):
+            tokens = list_device_tokens(db)
+            push = send_push_to_tokens(
+                db,
+                tokens=tokens,
+                title="再ログインが必要です",
+                body="ポータルセッションが切れました。再認証を行ってください。",
+                data={"kind": "auth_required"},
+            )
+            print(f"[INFO] auth alert push sent={push['sent']} failed={push['failed']} targets={len(tokens)}")
         print("[WARN] Portal auth required. Session expired or login page detected.")
+        if scrape_result.reason:
+            print(f"[DEBUG] reason={scrape_result.reason}")
         print("[NEXT] Run: python src/run_once.py --init-session")
         print("[NEXT] Then run: python src/run_once.py")
         return 0
 
     if not notices:
         print("[WARN] No notices found. Check selectors against portal HTML.")
+        if scrape_result.reason:
+            print(f"[DEBUG] reason={scrape_result.reason}")
         return 0
 
     result = upsert_notices(
@@ -116,7 +130,7 @@ def main() -> int:
             db,
             tokens=tokens,
             title=f"新着 [{section}] {latest.title}",
-            body=(latest.body or latest.published_at or "新しいお知らせがあります。")[:120],
+            body=((f"{latest.sender} / " if latest.sender else "") + (latest.published_at or "新しいお知らせがあります。"))[:120],
             data={"kind": "new_notice"},
         )
         print(f"[INFO] push sent={push['sent']} failed={push['failed']} targets={len(tokens)}")

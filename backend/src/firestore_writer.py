@@ -31,6 +31,10 @@ def upsert_notices(
             "title": notice.title,
             "body": notice.body,
             "publishedAtRaw": notice.published_at,
+            "receivedAtRaw": notice.published_at,
+            "receivedAtEpoch": notice.received_at_epoch,
+            "readAtRaw": notice.read_at,
+            "sender": notice.sender,
             "sourceUrl": notice.source_url,
             "section": notice.section,
             "type": infer_notice_type(notice),
@@ -51,23 +55,27 @@ def upsert_notices(
 
 
 def infer_notice_type(notice: Notice) -> str:
-    text = f"{notice.title} {notice.body} {notice.section}"
-    text = text.lower()
-    if "休講" in text:
+    # Do NOT use body for type inference: row text can include menu words
+    # and causes false positives like "休講".
+    title = (notice.title or "").lower()
+    section = (notice.section or "").lower()
+
+    # Course-related notices only.
+    if "講義" in section and "休講" in title:
         return "cancellation"
-    if "補講" in text:
+    if "講義" in section and "補講" in title:
         return "makeupClass"
-    if "教室変更" in text:
+    if "講義" in section and "教室変更" in title:
         return "roomChange"
-    if "課題" in text or "レポート" in text:
+    if ("講義" in section or "教員" in section) and ("課題" in title or "レポート" in title):
         return "assignment"
-    if "あなた宛" in text:
+    if "あなた宛" in section:
         return "general"
     return "general"
 
 
 def _build_notice_id(notice: Notice) -> str:
-    raw = f"{notice.title}|{notice.published_at}|{notice.source_url}"
+    raw = f"{notice.title}|{notice.section}|{notice.published_at}|{notice.source_url}|{notice.sender}"
     return hashlib.sha1(raw.encode("utf-8")).hexdigest()
 
 
@@ -76,8 +84,12 @@ def update_portal_status(
     *,
     auth_required: bool,
     reason: str,
-) -> None:
-    db.collection("system_status").document("portal_auth").set(
+) -> Dict[str, bool]:
+    ref = db.collection("system_status").document("portal_auth")
+    prev = ref.get().to_dict() or {}
+    prev_auth_required = bool(prev.get("authRequired", False))
+
+    ref.set(
         {
             "authRequired": auth_required,
             "reason": reason,
@@ -85,6 +97,11 @@ def update_portal_status(
         },
         merge=True,
     )
+    return {
+        "prev_auth_required": prev_auth_required,
+        "became_auth_required": (not prev_auth_required) and auth_required,
+        "recovered_from_auth_required": prev_auth_required and (not auth_required),
+    }
 
 
 def list_device_tokens(db: firestore.Client, limit: int = 500) -> List[str]:
