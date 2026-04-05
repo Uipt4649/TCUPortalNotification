@@ -6,8 +6,18 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-from firestore_writer import init_firestore, upsert_notices
-from tcu_portal_scraper import ScraperConfig, create_session_state, scrape_notices
+from firestore_writer import (
+    init_firestore,
+    list_device_tokens,
+    send_push_to_tokens,
+    update_portal_status,
+    upsert_notices,
+)
+from tcu_portal_scraper import (
+    ScraperConfig,
+    create_session_state,
+    scrape_notices_with_status,
+)
 
 
 def parse_args() -> argparse.Namespace:
@@ -69,19 +79,49 @@ def main() -> int:
         create_session_state(config)
         return 0
 
-    notices = scrape_notices(config)
+    db = init_firestore()
+    scrape_result = scrape_notices_with_status(config)
+    notices = scrape_result.notices
     print(f"[INFO] scraped notices: {len(notices)}")
+
+    update_portal_status(
+        db,
+        auth_required=scrape_result.auth_required,
+        reason=scrape_result.reason,
+    )
+
+    if scrape_result.auth_required:
+        print("[WARN] Portal auth required. Session expired or login page detected.")
+        print("[NEXT] Run: python src/run_once.py --init-session")
+        print("[NEXT] Then run: python src/run_once.py")
+        return 0
+
     if not notices:
         print("[WARN] No notices found. Check selectors against portal HTML.")
         return 0
 
-    db = init_firestore()
     result = upsert_notices(
         db=db,
         notices=notices,
         collection_name=os.environ["FIRESTORE_COLLECTION"],
     )
     print(f"[INFO] created={result['created']} updated={result['updated']}")
+
+    created_notices = result.get("created_notices", [])
+    if created_notices:
+        tokens = list_device_tokens(db)
+        latest = created_notices[0]
+        section = latest.section or "ポータル通知"
+        push = send_push_to_tokens(
+            db,
+            tokens=tokens,
+            title=f"新着 [{section}] {latest.title}",
+            body=(latest.body or latest.published_at or "新しいお知らせがあります。")[:120],
+            data={"kind": "new_notice"},
+        )
+        print(f"[INFO] push sent={push['sent']} failed={push['failed']} targets={len(tokens)}")
+    else:
+        print("[INFO] No new notice documents. Push skipped.")
 
     for idx, n in enumerate(notices[:3], start=1):
         print(f"[sample {idx}] {n.published_at} | {n.title}")

@@ -8,6 +8,7 @@
 import SwiftUI
 import Combine
 import UserNotifications
+import UIKit
 #if canImport(FirebaseCore) && canImport(FirebaseFirestore)
 import FirebaseCore
 import FirebaseFirestore
@@ -19,7 +20,11 @@ struct ContentView: View {
     var body: some View {
         TabView {
             NavigationStack {
-                InboxView(notices: store.notices, errorMessage: store.errorMessage)
+                InboxView(
+                    notices: store.notices,
+                    errorMessage: store.errorMessage,
+                    portalStatus: store.portalStatus
+                )
             }
             .tabItem {
                 Label("受信箱", systemImage: "tray.full")
@@ -59,9 +64,11 @@ struct ContentView: View {
 private final class NoticeStore: ObservableObject {
     @Published var notices: [NoticeItem] = []
     @Published var errorMessage: String?
+    @Published var portalStatus: PortalStatus?
 
 #if canImport(FirebaseCore) && canImport(FirebaseFirestore)
     private var listener: ListenerRegistration?
+    private var statusListener: ListenerRegistration?
 #endif
     private var hasBootstrapped = false
     private var knownIDs: Set<String> = []
@@ -118,6 +125,22 @@ private final class NoticeStore: ObservableObject {
                     }
                 }
             }
+
+        statusListener = Firestore.firestore()
+            .collection("system_status")
+            .document("portal_auth")
+            .addSnapshotListener { [weak self] snapshot, _ in
+                guard let self else { return }
+                guard let data = snapshot?.data() else {
+                    DispatchQueue.main.async {
+                        self.portalStatus = nil
+                    }
+                    return
+                }
+                DispatchQueue.main.async {
+                    self.portalStatus = PortalStatus(data: data)
+                }
+            }
 #endif
     }
 }
@@ -125,10 +148,13 @@ private final class NoticeStore: ObservableObject {
 private struct InboxView: View {
     let notices: [NoticeItem]
     let errorMessage: String?
+    let portalStatus: PortalStatus?
+    @State private var selectedSections: Set<String> = Set(PortalSectionStyle.all.map(\.name))
 
     private var groupedSections: [(String, [NoticeItem])] {
-        let grouped = Dictionary(grouping: notices, by: { $0.course })
-        let order = ["あなた宛のお知らせ", "大学からのお知らせ", "講義のお知らせ", "ポータル通知"]
+        let filtered = notices.filter { selectedSections.contains($0.course) }
+        let grouped = Dictionary(grouping: filtered, by: { $0.course })
+        let order = PortalSectionStyle.all.map(\.name)
 
         return grouped
             .map { ($0.key.isEmpty ? "ポータル通知" : $0.key, $0.value) }
@@ -142,17 +168,32 @@ private struct InboxView: View {
 
     var body: some View {
         List {
+            if let portalStatus, portalStatus.authRequired {
+                Section("同期状態") {
+                    SessionExpiredBanner(status: portalStatus)
+                        .listRowInsets(EdgeInsets(top: 6, leading: 0, bottom: 6, trailing: 0))
+                        .listRowSeparator(.hidden)
+                }
+            }
+
             Section("フィルタ") {
                 filterRow
                     .listRowInsets(EdgeInsets(top: 4, leading: 0, bottom: 4, trailing: 0))
             }
 
             ForEach(groupedSections, id: \.0) { section, items in
-                Section(section) {
+                Section {
                     ForEach(items) { notice in
                         NotificationCard(notice: notice)
                             .listRowInsets(EdgeInsets(top: 6, leading: 0, bottom: 6, trailing: 0))
                             .listRowSeparator(.hidden)
+                    }
+                } header: {
+                    HStack(spacing: 8) {
+                        Circle()
+                            .fill(PortalSectionStyle.color(for: section))
+                            .frame(width: 8, height: 8)
+                        Text(section)
                     }
                 }
             }
@@ -180,13 +221,56 @@ private struct InboxView: View {
     private var filterRow: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 8) {
-                FilterChip(title: "未読")
-                FilterChip(title: "休講")
-                FilterChip(title: "課題")
-                FilterChip(title: "教室変更")
+                ForEach(PortalSectionStyle.all, id: \.name) { section in
+                    FilterChip(
+                        title: section.name,
+                        color: section.color,
+                        isSelected: selectedSections.contains(section.name)
+                    ) {
+                        if selectedSections.contains(section.name) {
+                            selectedSections.remove(section.name)
+                            if selectedSections.isEmpty {
+                                selectedSections = Set(PortalSectionStyle.all.map(\.name))
+                            }
+                        } else {
+                            selectedSections.insert(section.name)
+                        }
+                    }
+                }
             }
             .padding(.vertical, 2)
         }
+    }
+}
+
+private struct SessionExpiredBanner: View {
+    let status: PortalStatus
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Label("ポータル再認証が必要です", systemImage: "exclamationmark.triangle.fill")
+                .font(.headline)
+                .foregroundStyle(.orange)
+            Text("通知取得が停止中です。ターミナルで次を実行してください。")
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+            Text("python src/run_once.py --init-session")
+                .font(.caption.monospaced())
+            Text("python src/run_once.py")
+                .font(.caption.monospaced())
+            if let checkedAt = status.checkedAtLabel {
+                Text("最終確認: \(checkedAt)")
+                    .font(.caption2)
+                    .foregroundStyle(.secondary)
+            }
+        }
+        .padding(12)
+        .background(Color.orange.opacity(0.12))
+        .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
+        .overlay(
+            RoundedRectangle(cornerRadius: 12, style: .continuous)
+                .stroke(Color.orange.opacity(0.35), lineWidth: 1)
+        )
     }
 }
 
@@ -196,12 +280,17 @@ private final class LocalNoticeNotifier {
     private init() {}
 
     func requestAuthorization() {
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { _, _ in }
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, _ in
+            guard granted else { return }
+            DispatchQueue.main.async {
+                UIApplication.shared.registerForRemoteNotifications()
+            }
+        }
     }
 
     func notifyNewNotice(_ notice: NoticeItem) {
         let content = UNMutableNotificationContent()
-        content.title = "新着: \(notice.title)"
+        content.title = "新着 [\(notice.course)] \(notice.title)"
         content.body = notice.summary
         content.sound = .default
 
@@ -298,7 +387,7 @@ private struct NotificationCard: View {
                 TypeTag(type: notice.type)
                 Text(notice.course)
                     .font(.caption)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(PortalSectionStyle.color(for: notice.course))
                 Spacer()
                 if notice.isUnread {
                     Circle()
@@ -320,6 +409,11 @@ private struct NotificationCard: View {
                 Label(notice.dateLabel, systemImage: "clock")
                 if let dueDate = notice.dueDateLabel {
                     Label("締切 \(dueDate)", systemImage: "calendar.badge.exclamationmark")
+                }
+                if let sourceURL = notice.sourceURL {
+                    Link(destination: sourceURL) {
+                        Label("ポータルで開く", systemImage: "safari")
+                    }
                 }
             }
             .font(.caption)
@@ -352,14 +446,24 @@ private struct TypeTag: View {
 
 private struct FilterChip: View {
     let title: String
+    let color: Color
+    let isSelected: Bool
+    let onTap: () -> Void
 
     var body: some View {
-        Text(title)
-            .font(.caption)
-            .padding(.horizontal, 12)
-            .padding(.vertical, 8)
-            .background(Color(.secondarySystemBackground))
-            .clipShape(Capsule())
+        Button(action: onTap) {
+            Text(title)
+                .font(.caption)
+                .padding(.horizontal, 12)
+                .padding(.vertical, 8)
+                .background(isSelected ? color.opacity(0.18) : Color(.secondarySystemBackground))
+                .overlay(
+                    Capsule()
+                        .stroke(isSelected ? color.opacity(0.8) : Color.clear, lineWidth: 1)
+                )
+                .clipShape(Capsule())
+        }
+        .buttonStyle(.plain)
     }
 }
 
@@ -409,6 +513,7 @@ private struct NoticeItem: Identifiable {
     let summary: String
     let dateLabel: String
     let dueDateLabel: String?
+    let sourceURL: URL?
     let isUnread: Bool
     let isImportant: Bool
 
@@ -420,6 +525,7 @@ private struct NoticeItem: Identifiable {
         summary: String,
         dateLabel: String,
         dueDateLabel: String?,
+        sourceURL: URL? = nil,
         isUnread: Bool,
         isImportant: Bool
     ) {
@@ -430,6 +536,7 @@ private struct NoticeItem: Identifiable {
         self.summary = summary
         self.dateLabel = dateLabel
         self.dueDateLabel = dueDateLabel
+        self.sourceURL = sourceURL
         self.isUnread = isUnread
         self.isImportant = isImportant
     }
@@ -444,7 +551,8 @@ private struct NoticeItem: Identifiable {
         let typeRaw = (data["type"] as? String) ?? "general"
         let body = (data["body"] as? String) ?? ""
         let publishedAtRaw = (data["publishedAtRaw"] as? String) ?? ""
-        let section = (data["section"] as? String) ?? "ポータル通知"
+        let section = PortalSectionStyle.normalized((data["section"] as? String) ?? "ポータル通知")
+        let sourceUrlRaw = (data["sourceUrl"] as? String) ?? ""
 
         self.id = document.documentID
         self.type = NoticeType.fromFirestore(typeRaw)
@@ -453,6 +561,7 @@ private struct NoticeItem: Identifiable {
         self.summary = body.isEmpty ? "本文なし" : body
         self.dateLabel = publishedAtRaw.isEmpty ? "日時不明" : publishedAtRaw
         self.dueDateLabel = nil
+        self.sourceURL = URL(string: sourceUrlRaw)
         self.isUnread = true
         self.isImportant = self.type == .cancellation || self.type == .roomChange || self.type == .assignment
     }
@@ -526,5 +635,56 @@ private extension NoticeType {
         default:
             return .general
         }
+    }
+}
+
+private struct PortalSectionStyle {
+    let name: String
+    let color: Color
+
+    static let all: [PortalSectionStyle] = [
+        .init(name: "大学からのお知らせ", color: Color(red: 0.72, green: 0.64, blue: 0.90)),
+        .init(name: "あなた宛のお知らせ", color: Color(red: 0.93, green: 0.44, blue: 0.62)),
+        .init(name: "教員からのお知らせ", color: Color(red: 0.66, green: 0.80, blue: 0.36)),
+        .init(name: "誰でも投稿", color: Color(red: 0.84, green: 0.66, blue: 0.12)),
+        .init(name: "講義のお知らせ", color: Color(red: 0.14, green: 0.52, blue: 0.31)),
+        .init(name: "ポータル通知", color: Color(red: 0.45, green: 0.48, blue: 0.54)),
+    ]
+
+    static func normalized(_ raw: String) -> String {
+        let value = raw.trimmingCharacters(in: .whitespacesAndNewlines)
+        if value.contains("大学からのお知らせ") { return "大学からのお知らせ" }
+        if value.contains("あなた宛のお知らせ") { return "あなた宛のお知らせ" }
+        if value.contains("教員からのお知らせ") { return "教員からのお知らせ" }
+        if value.contains("誰でも投稿") { return "誰でも投稿" }
+        if value.contains("講義のお知らせ") { return "講義のお知らせ" }
+        return value.isEmpty ? "ポータル通知" : value
+    }
+
+    static func color(for name: String) -> Color {
+        all.first(where: { $0.name == normalized(name) })?.color ?? Color(.secondaryLabel)
+    }
+}
+
+private struct PortalStatus {
+    let authRequired: Bool
+    let reason: String
+    let checkedAtLabel: String?
+
+    init(data: [String: Any]) {
+        authRequired = (data["authRequired"] as? Bool) ?? false
+        reason = (data["reason"] as? String) ?? ""
+#if canImport(FirebaseCore) && canImport(FirebaseFirestore)
+        if let ts = data["checkedAt"] as? Timestamp {
+            let formatter = DateFormatter()
+            formatter.locale = Locale(identifier: "ja_JP")
+            formatter.dateFormat = "M/d HH:mm"
+            checkedAtLabel = formatter.string(from: ts.dateValue())
+        } else {
+            checkedAtLabel = nil
+        }
+#else
+        checkedAtLabel = nil
+#endif
     }
 }

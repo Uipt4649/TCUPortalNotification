@@ -82,7 +82,18 @@ python src/run_once.py --init-session
 
 - Cloud Run Job へこのスクリプトを移す
 - Cloud Scheduler で定期実行
-- Firestore 追加時に FCM 通知
+- Firestore 追加時に FCM 通知（実装済み）
+
+## 5.1 プッシュ通知（FCM）について
+
+- iOSアプリ起動時、`device_tokens` コレクションへFCMトークンを保存します。
+- `python src/run_once.py` 実行時に新規お知らせがあれば、登録済みトークンへプッシュ送信します。
+- 送信結果はターミナルに `push sent=... failed=...` と表示されます。
+
+### 注意
+
+- iOSの実機プッシュには Apple Developer 側の Push 設定（APNs）と、Firebase Cloud Messaging 設定が必要です。
+- シミュレータ環境では実機と同じプッシュ挙動にならない場合があります。
 
 ## 6. ここまで完了後の運用手順（あなたが毎回やること）
 

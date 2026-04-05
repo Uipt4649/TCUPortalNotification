@@ -37,6 +37,13 @@ class Notice:
     section: str = ""
 
 
+@dataclass
+class ScrapeResult:
+    notices: List[Notice]
+    auth_required: bool
+    reason: str = ""
+
+
 NOISE_TITLES = {
     "topページ",
     "講義から検索",
@@ -59,21 +66,29 @@ NOISE_TITLE_CONTAINS = [
 SECTION_HINTS = [
     "大学からのお知らせ",
     "あなた宛のお知らせ",
+    "教員からのお知らせ",
+    "誰でも投稿",
     "講義のお知らせ",
 ]
 
 
-def scrape_notices(config: ScraperConfig, limit: int = 20) -> List[Notice]:
+def scrape_notices_with_status(config: ScraperConfig, limit: int = 20) -> ScrapeResult:
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=True)
         try:
             context = _create_context_with_optional_session(browser, config.session_state_path)
             page = context.new_page()
             _login_if_needed(page, config)
+            if _is_auth_page(page):
+                return ScrapeResult(
+                    notices=[],
+                    auth_required=True,
+                    reason="microsoft_login_page_detected_after_session",
+                )
             # Try current page first (after SSO login), then fallback URLs.
             notices = _extract_notices(page, config, limit)
             if notices:
-                return notices
+                return ScrapeResult(notices=notices, auth_required=False)
 
             candidate_urls = [
                 config.portal_notice_page_url,
@@ -83,14 +98,28 @@ def scrape_notices(config: ScraperConfig, limit: int = 20) -> List[Notice]:
                 try:
                     page.goto(url, wait_until="domcontentloaded")
                     page.wait_for_timeout(1200)
+                    if _is_auth_page(page):
+                        return ScrapeResult(
+                            notices=[],
+                            auth_required=True,
+                            reason="microsoft_login_page_detected_on_notice_page",
+                        )
                     notices = _extract_notices(page, config, limit)
                     if notices:
-                        return notices
+                        return ScrapeResult(notices=notices, auth_required=False)
                 except Exception:
                     continue
-            return []
+            return ScrapeResult(
+                notices=[],
+                auth_required=False,
+                reason="no_notice_found_after_navigation",
+            )
         finally:
             browser.close()
+
+
+def scrape_notices(config: ScraperConfig, limit: int = 20) -> List[Notice]:
+    return scrape_notices_with_status(config, limit).notices
 
 
 def create_session_state(config: ScraperConfig) -> None:
@@ -188,6 +217,8 @@ def _extract_notices(page: Page, config: ScraperConfig, limit: int) -> List[Noti
         fallback_selectors = [
             "div:has-text('大学からのお知らせ') a",
             "div:has-text('あなた宛のお知らせ') a",
+            "div:has-text('教員からのお知らせ') a",
+            "div:has-text('誰でも投稿') a",
             "div:has-text('講義のお知らせ') a",
             "div:has(> h3) a",
             ".public_inf a",
@@ -445,3 +476,15 @@ def _login_if_needed(page: Page, config: ScraperConfig) -> None:
         return
     if page.locator("input[type='password']").count() > 0:
         _login(page, config)
+
+
+def _is_auth_page(page: Page) -> bool:
+    url = page.url.lower()
+    if "login.microsoftonline.com" in url:
+        return True
+    try:
+        if page.locator("#i0281").count() > 0:
+            return True
+    except Exception:
+        pass
+    return False

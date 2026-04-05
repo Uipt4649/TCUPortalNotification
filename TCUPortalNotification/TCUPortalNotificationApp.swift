@@ -10,6 +10,12 @@ import UserNotifications
 #if canImport(FirebaseCore)
 import FirebaseCore
 #endif
+#if canImport(FirebaseMessaging)
+import FirebaseMessaging
+#endif
+#if canImport(FirebaseFirestore)
+import FirebaseFirestore
+#endif
 
 final class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDelegate {
     func application(
@@ -24,6 +30,9 @@ final class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCent
         print("[Info] FirebaseCore not found. Skipping Firebase configuration.")
 #endif
         UNUserNotificationCenter.current().delegate = self
+#if canImport(FirebaseMessaging)
+        Messaging.messaging().delegate = self
+#endif
         return true
     }
 
@@ -33,6 +42,42 @@ final class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCent
         withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void
     ) {
         completionHandler([.banner, .sound, .badge])
+    }
+
+    func application(
+        _ application: UIApplication,
+        didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data
+    ) {
+#if canImport(FirebaseMessaging)
+        Messaging.messaging().apnsToken = deviceToken
+#endif
+    }
+}
+
+#if canImport(FirebaseMessaging)
+extension AppDelegate: MessagingDelegate {
+    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
+        guard let fcmToken, !fcmToken.isEmpty else { return }
+        DeviceTokenStore.shared.save(fcmToken: fcmToken)
+        print("[Info] FCM token received")
+    }
+}
+#endif
+
+private final class DeviceTokenStore {
+    static let shared = DeviceTokenStore()
+
+    private init() {}
+
+    func save(fcmToken: String) {
+#if canImport(FirebaseFirestore)
+        let payload: [String: Any] = [
+            "token": fcmToken,
+            "platform": "ios",
+            "updatedAt": FieldValue.serverTimestamp(),
+        ]
+        Firestore.firestore().collection("device_tokens").document(fcmToken).setData(payload, merge: true)
+#endif
     }
 }
 
