@@ -5,9 +5,14 @@ struct InboxView: View {
     let errorMessage: String?
     let portalStatus: PortalStatus?
     @State private var selectedSections: Set<String> = Set(PortalSectionStyle.all.map(\.name))
+    @State private var searchText: String = ""
 
     private var groupedSections: [(String, [NoticeItem])] {
-        let filtered = notices.filter { selectedSections.contains(PortalSectionStyle.normalized($0.course)) }
+        let filtered = notices.filter {
+            let sectionMatched = selectedSections.contains(PortalSectionStyle.normalized($0.course))
+            let titleMatched = searchText.isEmpty || $0.title.localizedCaseInsensitiveContains(searchText)
+            return sectionMatched && titleMatched
+        }
         let grouped = Dictionary(grouping: filtered, by: { PortalSectionStyle.normalized($0.course) })
         let order = PortalSectionStyle.all.map(\.name)
 
@@ -69,6 +74,7 @@ struct InboxView: View {
         }
         .listStyle(.insetGrouped)
         .navigationTitle("受信箱")
+        .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "タイトルを検索")
     }
 
     private var filterRow: some View {
