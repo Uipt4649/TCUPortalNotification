@@ -829,19 +829,26 @@ def _normalize_section(raw_section: str, row_text: str, title: str) -> str:
 
 def _normalize_kind(raw: str) -> str:
     value = _normalize_text(raw)
+    if not value:
+        return ""
     if "大学からのお知らせ" in value:
         return "大学からのお知らせ"
     if "あなた宛のお知らせ" in value:
         return "あなた宛のお知らせ"
     if "教員からのお知らせ" in value:
         return "教員からのお知らせ"
+    if "教務メッセージ" in value:
+        return "教員からのお知らせ"
     if "誰でも投稿" in value or "だれでも投稿" in value:
         return "誰でも投稿"
     if "講義のお知らせ" in value:
         return "講義のお知らせ"
+    if "講義情報" in value:
+        return "講義のお知らせ"
     if "伝言" in value:
         return "伝言"
-    return ""
+    # Keep unknown kinds instead of dropping them.
+    return value
 
 
 def _parse_datetime_epoch(text: str) -> int:

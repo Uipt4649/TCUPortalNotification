@@ -144,6 +144,14 @@ def main() -> int:
     for idx, n in enumerate(notices[:3], start=1):
         print(f"[sample {idx}] {n.published_at} | {n.title}")
 
+    section_counts: dict[str, int] = {}
+    for n in notices:
+        key = n.section or "その他"
+        section_counts[key] = section_counts.get(key, 0) + 1
+    if section_counts:
+        detail = ", ".join(f"{k}:{v}" for k, v in sorted(section_counts.items(), key=lambda x: x[0]))
+        print(f"[INFO] section_counts {detail}")
+
     return 0
 
 

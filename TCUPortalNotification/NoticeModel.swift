@@ -69,13 +69,16 @@ struct NoticeItem: Identifiable {
         let receivedAtRaw = (data["receivedAtRaw"] as? String) ?? (data["publishedAtRaw"] as? String) ?? ""
         let readAtRaw = (data["readAtRaw"] as? String) ?? ""
         let sender = (data["sender"] as? String) ?? ""
-        let section = PortalSectionStyle.normalized((data["section"] as? String) ?? "")
-        guard !section.isEmpty else { return nil }
+        let rawSection = (data["section"] as? String) ?? ""
+        let section = PortalSectionStyle.normalized(rawSection)
+        let sectionDisplay = section.isEmpty
+            ? (rawSection.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ? "その他" : rawSection.trimmingCharacters(in: .whitespacesAndNewlines))
+            : section
         let sourceUrlRaw = (data["sourceUrl"] as? String) ?? ""
 
         self.id = document.documentID
         self.type = NoticeType.fromFirestore(typeRaw)
-        self.course = section
+        self.course = sectionDisplay
         self.title = title
         self.summary = body.isEmpty ? "本文なし" : body
         self.dateLabel = receivedAtRaw.isEmpty ? "日時不明" : receivedAtRaw
@@ -101,6 +104,7 @@ struct PortalSectionStyle {
         .init(name: "誰でも投稿", color: Color(red: 0.84, green: 0.66, blue: 0.12)),
         .init(name: "講義のお知らせ", color: Color(red: 0.14, green: 0.52, blue: 0.31)),
         .init(name: "伝言", color: Color(red: 0.36, green: 0.64, blue: 0.82)),
+        .init(name: "その他", color: Color(red: 0.48, green: 0.53, blue: 0.60)),
     ]
 
     static func normalized(_ raw: String) -> String {

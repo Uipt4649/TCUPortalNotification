@@ -7,13 +7,22 @@ struct InboxView: View {
     @State private var selectedSections: Set<String> = Set(PortalSectionStyle.all.map(\.name))
     @State private var searchText: String = ""
 
+    private func sectionKey(for notice: NoticeItem) -> String {
+        let normalized = PortalSectionStyle.normalized(notice.course)
+        if !normalized.isEmpty {
+            return normalized
+        }
+        let raw = notice.course.trimmingCharacters(in: .whitespacesAndNewlines)
+        return raw.isEmpty ? "その他" : raw
+    }
+
     private var groupedSections: [(String, [NoticeItem])] {
         let filtered = notices.filter {
-            let sectionMatched = selectedSections.contains(PortalSectionStyle.normalized($0.course))
+            let sectionMatched = selectedSections.contains(sectionKey(for: $0))
             let titleMatched = searchText.isEmpty || $0.title.localizedCaseInsensitiveContains(searchText)
             return sectionMatched && titleMatched
         }
-        let grouped = Dictionary(grouping: filtered, by: { PortalSectionStyle.normalized($0.course) })
+        let grouped = Dictionary(grouping: filtered, by: { sectionKey(for: $0) })
         let order = PortalSectionStyle.all.map(\.name)
 
         return grouped.sorted {
