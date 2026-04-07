@@ -80,7 +80,11 @@ def main() -> int:
         return 0
 
     db = init_firestore()
-    scrape_result = scrape_notices_with_status(config)
+    scrape_limit = int(os.getenv("SCRAPE_LIMIT", "200"))
+    if scrape_limit < 1:
+        scrape_limit = 200
+
+    scrape_result = scrape_notices_with_status(config, limit=scrape_limit)
     notices = scrape_result.notices
     print(f"[INFO] scraped notices: {len(notices)}")
 

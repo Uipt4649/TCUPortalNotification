@@ -93,7 +93,14 @@ def scrape_notices_with_status(config: ScraperConfig, limit: int = 20) -> Scrape
         try:
             context = _create_context_with_optional_session(browser, config.session_state_path)
             page = context.new_page()
-            _login_if_needed(page, config)
+            try:
+                _login_if_needed(page, config)
+            except Exception:
+                return ScrapeResult(
+                    notices=[],
+                    auth_required=True,
+                    reason="login_flow_failed",
+                )
             if _is_auth_page(page):
                 return ScrapeResult(
                     notices=[],
@@ -292,10 +299,33 @@ def _try_open_credential_form(page: Page, login_entry_selector: str) -> None:
             page.click(selector, timeout=4000)
             page.wait_for_load_state("domcontentloaded")
             page.wait_for_timeout(800)
+            # Microsoft login page after transition.
+            if "login.microsoftonline.com" in page.url or page.locator("#i0116").count() > 0:
+                return
             if page.locator("input[type='password']").count() > 0:
                 return
         except Exception:
             continue
+
+    # Some portal variants keep only loginForm/loginButton and require explicit form submit.
+    try:
+        if page.locator("form[name='loginForm']").count() > 0:
+            page.evaluate(
+                """
+() => {
+  const f = document.querySelector("form[name='loginForm']");
+  if (f) { f.submit(); }
+}
+"""
+            )
+            page.wait_for_load_state("domcontentloaded")
+            page.wait_for_timeout(1200)
+            if "login.microsoftonline.com" in page.url or page.locator("#i0116").count() > 0:
+                return
+            if page.locator("input[type='password']").count() > 0:
+                return
+    except Exception:
+        pass
 
     # Fallback: this portal often exposes credential inputs on login.do directly.
     try:
@@ -845,6 +875,15 @@ def _login_if_needed(page: Page, config: ScraperConfig) -> None:
         _login(page, config)
         return
     if page.locator("input[type='password']").count() > 0:
+        _login(page, config)
+        return
+    # Unauthenticated portal top can show a generic error + login transition button.
+    # In this state, menu is empty and content contains loginForm/loginButton.
+    if (
+        page.locator("form[name='loginForm']").count() > 0
+        or page.locator("#loginButton").count() > 0
+        or "予期せぬエラーが発生しました" in page.content()
+    ):
         _login(page, config)
 
 

@@ -33,8 +33,8 @@ final class NoticeStore: ObservableObject {
 
         listener = Firestore.firestore()
             .collection("notices")
-            .order(by: "updatedAt", descending: true)
-            .limit(to: 100)
+            .whereField("source", isEqualTo: "portal_message_list")
+            .limit(to: 300)
             .addSnapshotListener { [weak self] snapshot, error in
                 guard let self else { return }
                 if let error {

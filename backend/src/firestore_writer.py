@@ -37,6 +37,7 @@ def upsert_notices(
             "sender": notice.sender,
             "sourceUrl": notice.source_url,
             "section": notice.section,
+            "source": "portal_message_list",
             "type": infer_notice_type(notice),
             "createdAt": firestore.SERVER_TIMESTAMP,
             "updatedAt": firestore.SERVER_TIMESTAMP,

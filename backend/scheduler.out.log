@@ -76,3 +76,90 @@
 [INFO] scraped notices: 0
 [WARN] No notices found. Check selectors against portal HTML.
 [DEBUG] reason=showall_table_not_found_or_empty
+[INFO] scraped notices: 0
+[WARN] No notices found. Check selectors against portal HTML.
+[DEBUG] reason=showall_table_not_found_or_empty
+[INFO] scraped notices: 0
+[WARN] No notices found. Check selectors against portal HTML.
+[DEBUG] reason=showall_table_not_found_or_empty
+[INFO] scraped notices: 0
+[WARN] No notices found. Check selectors against portal HTML.
+[DEBUG] reason=showall_table_not_found_or_empty
+[INFO] scraped notices: 0
+[WARN] No notices found. Check selectors against portal HTML.
+[DEBUG] reason=showall_table_not_found_or_empty
+[INFO] scraped notices: 0
+[WARN] No notices found. Check selectors against portal HTML.
+[DEBUG] reason=showall_table_not_found_or_empty
+[INFO] scraped notices: 0
+[WARN] No notices found. Check selectors against portal HTML.
+[DEBUG] reason=showall_table_not_found_or_empty
+[INFO] scraped notices: 0
+[WARN] No notices found. Check selectors against portal HTML.
+[DEBUG] reason=showall_table_not_found_or_empty
+[INFO] scraped notices: 0
+[WARN] No notices found. Check selectors against portal HTML.
+[DEBUG] reason=showall_table_not_found_or_empty
+[INFO] scraped notices: 0
+[WARN] No notices found. Check selectors against portal HTML.
+[DEBUG] reason=showall_table_not_found_or_empty
+[INFO] scraped notices: 0
+[WARN] No notices found. Check selectors against portal HTML.
+[DEBUG] reason=showall_table_not_found_or_empty
+[INFO] scraped notices: 0
+[WARN] No notices found. Check selectors against portal HTML.
+[DEBUG] reason=showall_table_not_found_or_empty
+[INFO] scraped notices: 0
+[WARN] No notices found. Check selectors against portal HTML.
+[DEBUG] reason=showall_table_not_found_or_empty
+[INFO] scraped notices: 0
+[WARN] No notices found. Check selectors against portal HTML.
+[DEBUG] reason=showall_table_not_found_or_empty
+[INFO] scraped notices: 0
+[WARN] No notices found. Check selectors against portal HTML.
+[DEBUG] reason=showall_table_not_found_or_empty
+[INFO] scraped notices: 0
+[WARN] No notices found. Check selectors against portal HTML.
+[DEBUG] reason=showall_table_not_found_or_empty
+[INFO] scraped notices: 0
+[WARN] No notices found. Check selectors against portal HTML.
+[DEBUG] reason=showall_table_not_found_or_empty
+[INFO] scraped notices: 0
+[WARN] No notices found. Check selectors against portal HTML.
+[DEBUG] reason=showall_table_not_found_or_empty
+[INFO] scraped notices: 0
+[WARN] No notices found. Check selectors against portal HTML.
+[DEBUG] reason=showall_table_not_found_or_empty
+[INFO] scraped notices: 0
+[WARN] No notices found. Check selectors against portal HTML.
+[DEBUG] reason=showall_table_not_found_or_empty
+[INFO] scraped notices: 0
+[WARN] No notices found. Check selectors against portal HTML.
+[DEBUG] reason=showall_table_not_found_or_empty
+[INFO] scraped notices: 0
+[WARN] No notices found. Check selectors against portal HTML.
+[DEBUG] reason=showall_table_not_found_or_empty
+[INFO] scraped notices: 0
+[WARN] No notices found. Check selectors against portal HTML.
+[DEBUG] reason=showall_table_not_found_or_empty
+[INFO] scraped notices: 0
+[WARN] No notices found. Check selectors against portal HTML.
+[DEBUG] reason=showall_table_not_found_or_empty
+[INFO] scraped notices: 0
+[WARN] No notices found. Check selectors against portal HTML.
+[DEBUG] reason=showall_table_not_found_or_empty
+[INFO] scraped notices: 0
+[WARN] No notices found. Check selectors against portal HTML.
+[DEBUG] reason=showall_table_not_found_or_empty
+[INFO] scraped notices: 0
+[INFO] auth alert push sent=0 failed=0 targets=0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 48
+[INFO] created=0 updated=48
+[INFO] No new notice documents. Push skipped.
+[sample 1] 2026/04/07 13:00 | SCキャリアより）キャリア支援課における面談について（2026年4月10日以降）
+[sample 2] 2026/04/06 21:42 | 2026年度体育祭申し込み案内(2日目・団体参加)
+[sample 3] 2026/04/06 21:38 | 2026年度体育祭申し込み案内（1日目1年生学科対抗YC）
