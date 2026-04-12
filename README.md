@@ -10,6 +10,9 @@
 東京都市大学ポータルの更新を見逃さないための、個人運用向け iOS 通知アプリです。  
 ポータル情報を Firestore に同期し、アプリ側で見やすく整理して表示します。
 
+/Users/ui/Pictures/Photos Library.photoslibrary/resources/derivatives/F/FF04D804-969F-4486-A50F-18689D0FF126_1_102_o.jpeg
+
+
 ---
 
 ## どんなアプリ？
