@@ -85,6 +85,21 @@ final class NoticeStore: ObservableObject {
             }
 #endif
     }
+
+    func refreshPortalStatusOnce() {
+#if canImport(FirebaseCore) && canImport(FirebaseFirestore)
+        Firestore.firestore()
+            .collection("system_status")
+            .document("portal_auth")
+            .getDocument { [weak self] snapshot, _ in
+                guard let self else { return }
+                guard let data = snapshot?.data() else { return }
+                DispatchQueue.main.async {
+                    self.portalStatus = PortalStatus(data: data)
+                }
+            }
+#endif
+    }
 }
 
 final class LocalNoticeNotifier {

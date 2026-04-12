@@ -9,7 +9,8 @@ struct ContentView: View {
                 InboxView(
                     notices: store.notices,
                     errorMessage: store.errorMessage,
-                    portalStatus: store.portalStatus
+                    portalStatus: store.portalStatus,
+                    onRefreshStatus: { store.refreshPortalStatusOnce() }
                 )
             }
             .tabItem { Label("受信箱", systemImage: "tray.full") }
@@ -18,11 +19,6 @@ struct ContentView: View {
                 ImportantView(notices: store.notices)
             }
             .tabItem { Label("重要", systemImage: "exclamationmark.circle") }
-
-            NavigationStack {
-                CalendarView(notices: store.notices)
-            }
-            .tabItem { Label("カレンダー", systemImage: "calendar") }
 
             NavigationStack {
                 SettingsView()

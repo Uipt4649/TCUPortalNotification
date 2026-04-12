@@ -229,3 +229,59 @@
 [DEBUG] reason=microsoft_login_page_detected_after_session
 [NEXT] Run: python src/run_once.py --init-session
 [NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 50
+[INFO] created=0 updated=50
+[INFO] No new notice documents. Push skipped.
+[sample 1] 2026/04/11 14:22 | 夢キャンコミュニケーター新入生説明会と新入生交流会のお知らせ
+[sample 2] 2026/04/11 09:30 | SD PBL(1)の初回授業について
+[sample 3] 2026/04/10 21:16 | 献血実施のお知らせ
+[INFO] section_counts 伝言:3, 大学からのお知らせ:29, 教員からのお知らせ:9, 誰でも投稿:9
+[INFO] scraped notices: 50
+[INFO] created=0 updated=50
+[INFO] No new notice documents. Push skipped.
+[sample 1] 2026/04/11 14:22 | 夢キャンコミュニケーター新入生説明会と新入生交流会のお知らせ
+[sample 2] 2026/04/11 09:30 | SD PBL(1)の初回授業について
+[sample 3] 2026/04/10 21:16 | 献血実施のお知らせ
+[INFO] section_counts 伝言:3, 大学からのお知らせ:29, 教員からのお知らせ:9, 誰でも投稿:9
+[INFO] scraped notices: 50
+[INFO] created=1 updated=49
+[INFO] push sent=0 failed=0 targets=0
+[sample 1] 2026/04/12 19:14 | 教養ゼミナール(Human Cognition and A.I.)
+[sample 2] 2026/04/11 14:22 | 夢キャンコミュニケーター新入生説明会と新入生交流会のお知らせ
+[sample 3] 2026/04/11 09:30 | SD PBL(1)の初回授業について
+[INFO] section_counts 伝言:3, 大学からのお知らせ:28, 教員からのお知らせ:9, 誰でも投稿:10
+[INFO] scraped notices: 50
+[INFO] created=0 updated=50
+[INFO] No new notice documents. Push skipped.
+[sample 1] 2026/04/12 19:14 | 教養ゼミナール(Human Cognition and A.I.)
+[sample 2] 2026/04/11 14:22 | 夢キャンコミュニケーター新入生説明会と新入生交流会のお知らせ
+[sample 3] 2026/04/11 09:30 | SD PBL(1)の初回授業について
+[INFO] section_counts 伝言:3, 大学からのお知らせ:28, 教員からのお知らせ:9, 誰でも投稿:10
+[INFO] scraped notices: 50
+[INFO] created=0 updated=50
+[INFO] No new notice documents. Push skipped.
+[sample 1] 2026/04/12 19:14 | 教養ゼミナール(Human Cognition and A.I.)
+[sample 2] 2026/04/11 14:22 | 夢キャンコミュニケーター新入生説明会と新入生交流会のお知らせ
+[sample 3] 2026/04/11 09:30 | SD PBL(1)の初回授業について
+[INFO] section_counts 伝言:3, 大学からのお知らせ:28, 教員からのお知らせ:9, 誰でも投稿:10
+[INFO] scraped notices: 50
+[INFO] created=0 updated=50
+[INFO] No new notice documents. Push skipped.
+[sample 1] 2026/04/12 19:14 | 教養ゼミナール(Human Cognition and A.I.)
+[sample 2] 2026/04/11 14:22 | 夢キャンコミュニケーター新入生説明会と新入生交流会のお知らせ
+[sample 3] 2026/04/11 09:30 | SD PBL(1)の初回授業について
+[INFO] section_counts 伝言:3, 大学からのお知らせ:28, 教員からのお知らせ:9, 誰でも投稿:10
+[INFO] scraped notices: 50
+[INFO] created=0 updated=50
+[INFO] No new notice documents. Push skipped.
+[sample 1] 2026/04/12 19:14 | 教養ゼミナール(Human Cognition and A.I.)
+[sample 2] 2026/04/11 14:22 | 夢キャンコミュニケーター新入生説明会と新入生交流会のお知らせ
+[sample 3] 2026/04/11 09:30 | SD PBL(1)の初回授業について
+[INFO] section_counts 伝言:3, 大学からのお知らせ:28, 教員からのお知らせ:9, 誰でも投稿:10
+[INFO] scraped notices: 50
+[INFO] created=0 updated=50
+[INFO] No new notice documents. Push skipped.
+[sample 1] 2026/04/12 19:14 | 教養ゼミナール(Human Cognition and A.I.)
+[sample 2] 2026/04/11 14:22 | 夢キャンコミュニケーター新入生説明会と新入生交流会のお知らせ
+[sample 3] 2026/04/11 09:30 | SD PBL(1)の初回授業について
+[INFO] section_counts 伝言:3, 大学からのお知らせ:28, 教員からのお知らせ:9, 誰でも投稿:10
