@@ -1,4 +1,10 @@
 # TCUPortalNotification
+![Platform](https://img.shields.io/badge/Platform-iOS-0A84FF?style=for-the-badge&logo=apple)
+![Swift](https://img.shields.io/badge/Swift-6.0-F05138?style=for-the-badge&logo=swift)
+![SwiftUI](https://img.shields.io/badge/UI-SwiftUI-0A84FF?style=for-the-badge)
+![Backend](https://img.shields.io/badge/Backend-Python-3776AB?style=for-the-badge&logo=python)
+![Firebase](https://img.shields.io/badge/BaaS-Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![License](https://img.shields.io/badge/License-Private-black?style=for-the-badge)
 
 東京都市大学ポータルの更新を見逃さないための iOS 通知アプリです。  
 ポータルから取得したお知らせを Firestore 経由で表示し、新着時に通知します。
