@@ -100,6 +100,65 @@ final class NoticeStore: ObservableObject {
             }
 #endif
     }
+
+    func refreshNow() {
+#if canImport(FirebaseCore) && canImport(FirebaseFirestore)
+        let db = Firestore.firestore()
+        let group = DispatchGroup()
+
+        var fetchedNotices: [NoticeItem]?
+        var fetchedStatus: PortalStatus?
+        var fetchError: String?
+
+        group.enter()
+        db.collection("notices")
+            .whereField("source", isEqualTo: "portal_message_list")
+            .limit(to: 300)
+            .getDocuments(source: .server) { snapshot, error in
+                defer { group.leave() }
+                if let error {
+                    fetchError = error.localizedDescription
+                    return
+                }
+                let docs = snapshot?.documents ?? []
+                fetchedNotices = docs
+                    .compactMap(NoticeItem.init(document:))
+                    .sorted(by: { $0.receivedAtEpoch > $1.receivedAtEpoch })
+            }
+
+        group.enter()
+        db.collection("system_status")
+            .document("portal_auth")
+            .getDocument(source: .server) { snapshot, error in
+                defer { group.leave() }
+                if let error {
+                    fetchError = error.localizedDescription
+                    return
+                }
+                if let data = snapshot?.data() {
+                    fetchedStatus = PortalStatus(data: data)
+                }
+            }
+
+        group.notify(queue: .main) { [weak self] in
+            guard let self else { return }
+            if let fetchedNotices {
+                self.notices = fetchedNotices
+                let ids = Set(fetchedNotices.map { $0.id })
+                self.knownIDs.formUnion(ids)
+                UserDefaults.standard.set(Array(self.knownIDs), forKey: self.knownIDsKey)
+            }
+            if let fetchedStatus {
+                self.portalStatus = fetchedStatus
+            }
+            if let fetchError {
+                self.errorMessage = fetchError
+            } else {
+                self.errorMessage = nil
+            }
+        }
+#endif
+    }
 }
 
 final class LocalNoticeNotifier {

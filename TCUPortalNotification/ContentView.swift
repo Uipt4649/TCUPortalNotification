@@ -10,7 +10,7 @@ struct ContentView: View {
                     notices: store.notices,
                     errorMessage: store.errorMessage,
                     portalStatus: store.portalStatus,
-                    onRefreshStatus: { store.refreshPortalStatusOnce() }
+                    onRefreshStatus: { store.refreshNow() }
                 )
             }
             .tabItem { Label("受信箱", systemImage: "tray.full") }
