@@ -1,3 +1,10 @@
+//
+//  TCUPortalNotificationApp.swift
+//  NoticeComponents
+//
+//  Created by 渡邉羽唯 on 2026/04/04.
+//
+
 import SwiftUI
 
 struct NotificationCard: View {
