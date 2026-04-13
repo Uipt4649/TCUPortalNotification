@@ -56,7 +56,7 @@ https://github.com/user-attachments/assets/08686c0b-4ef9-44e6-bc15-2b77b03f2d5c
 ### 1) iOS アプリ
 
 ```bash
-cd /Users/ui/Desktop/LifelsTech/TCUPortalNotification
+cd .
 open TCUPortalNotification.xcodeproj
 ```
 
@@ -65,7 +65,7 @@ Xcode で `Cmd + R` を実行します。
 ### 2) バックエンド同期
 
 ```bash
-cd /Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend
+cd backend
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -84,7 +84,7 @@ Microsoft SSO のセッションが切れると取得が停止します。
 以下を実行して復旧します。
 
 ```bash
-cd /Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend
+cd backend
 source .venv/bin/activate
 python src/run_once.py --init-session
 python src/run_once.py

@@ -10,7 +10,7 @@
 ## 1. セットアップ
 
 ```bash
-cd /Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend
+cd backend
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -54,7 +54,7 @@ export GOOGLE_APPLICATION_CREDENTIALS=./secrets/service-account.json
 ## 4. 動作確認（1回実行）
 
 ```bash
-cd /Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend
+cd backend
 source .venv/bin/activate
 python src/run_once.py
 ```
@@ -70,7 +70,7 @@ python src/run_once.py
 初回だけ手動ログインしてセッションを保存します。
 
 ```bash
-cd /Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend
+cd backend
 source .venv/bin/activate
 python src/run_once.py --init-session
 ```
@@ -100,7 +100,7 @@ python src/run_once.py --init-session
 ### 6.1 手動で1回実行
 
 ```bash
-cd /Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend
+cd backend
 source .venv/bin/activate
 python src/run_once.py
 ```
@@ -109,7 +109,7 @@ python src/run_once.py
 
 1. セッションを作り直す
 ```bash
-cd /Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend
+cd backend
 source .venv/bin/activate
 rm -f secrets/portal_session.json
 python src/run_once.py --init-session
