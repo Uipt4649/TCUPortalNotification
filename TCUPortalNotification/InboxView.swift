@@ -6,6 +6,7 @@ struct InboxView: View {
     let notices: [NoticeItem]
     let errorMessage: String?
     let portalStatus: PortalStatus?
+    let lastAppRefreshAt: Date?
     let onRefreshStatus: () -> Void
     @State private var selectedSection: String = PortalSectionStyle.all.first?.name ?? "大学からのお知らせ"
     @State private var searchText: String = ""
@@ -36,6 +37,7 @@ struct InboxView: View {
                     errorMessage: errorMessage,
                     isGlobalEmpty: notices.isEmpty,
                     portalStatus: portalStatus,
+                    lastAppRefreshAt: lastAppRefreshAt,
                     onRefreshStatus: onRefreshStatus,
                     selectedSection: $selectedSection
                 )
@@ -58,6 +60,7 @@ struct InboxSectionPage: View {
     let errorMessage: String?
     let isGlobalEmpty: Bool
     let portalStatus: PortalStatus?
+    let lastAppRefreshAt: Date?
     let onRefreshStatus: () -> Void
     @Binding var selectedSection: String
 
@@ -67,7 +70,7 @@ struct InboxSectionPage: View {
                 Text("同期状態")
                     .font(.headline)
 
-                SyncStatusCard(status: portalStatus, onRefreshStatus: onRefreshStatus)
+                SyncStatusCard(status: portalStatus, lastAppRefreshAt: lastAppRefreshAt, onRefreshStatus: onRefreshStatus)
 
                 Text("フィルタ")
                     .font(.headline)
@@ -240,7 +243,16 @@ struct RecoveryFlowSheet: View {
 
 struct SyncStatusCard: View {
     let status: PortalStatus?
+    let lastAppRefreshAt: Date?
     let onRefreshStatus: () -> Void
+
+    private var appRefreshLabel: String? {
+        guard let lastAppRefreshAt else { return nil }
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "ja_JP")
+        formatter.dateFormat = "M/d HH:mm:ss"
+        return formatter.string(from: lastAppRefreshAt)
+    }
 
     var body: some View {
         if let status {
@@ -252,7 +264,12 @@ struct SyncStatusCard: View {
                         .font(.headline)
                         .foregroundStyle(.green)
                     if let checkedAt = status.checkedAtLabel {
-                        Text("最終同期確認: \(checkedAt)")
+                        Text("バックエンド最終確認: \(checkedAt)")
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                    }
+                    if let appRefreshLabel {
+                        Text("アプリ再確認: \(appRefreshLabel)")
                             .font(.caption)
                             .foregroundStyle(.secondary)
                     }

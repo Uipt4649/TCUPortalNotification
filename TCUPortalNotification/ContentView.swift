@@ -10,6 +10,7 @@ struct ContentView: View {
                     notices: store.notices,
                     errorMessage: store.errorMessage,
                     portalStatus: store.portalStatus,
+                    lastAppRefreshAt: store.lastAppRefreshAt,
                     onRefreshStatus: { store.refreshNow() }
                 )
             }

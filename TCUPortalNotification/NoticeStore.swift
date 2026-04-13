@@ -11,6 +11,7 @@ final class NoticeStore: ObservableObject {
     @Published var notices: [NoticeItem] = []
     @Published var errorMessage: String?
     @Published var portalStatus: PortalStatus?
+    @Published var lastAppRefreshAt: Date?
 
 #if canImport(FirebaseCore) && canImport(FirebaseFirestore)
     private var listener: ListenerRegistration?
@@ -96,6 +97,7 @@ final class NoticeStore: ObservableObject {
                 guard let data = snapshot?.data() else { return }
                 DispatchQueue.main.async {
                     self.portalStatus = PortalStatus(data: data)
+                    self.lastAppRefreshAt = Date()
                 }
             }
 #endif
@@ -155,6 +157,7 @@ final class NoticeStore: ObservableObject {
                 self.errorMessage = fetchError
             } else {
                 self.errorMessage = nil
+                self.lastAppRefreshAt = Date()
             }
         }
 #endif
