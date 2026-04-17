@@ -49,7 +49,8 @@ https://github.com/user-attachments/assets/08686c0b-4ef9-44e6-bc15-2b77b03f2d5c
 - `TCUPortalNotification/` iOS アプリ（SwiftUI）
 - `backend/` 取得・同期処理（Python + Playwright + Firestore）
 
-<img width="689" height="614" alt="スクリーンショット 2026-04-14 15 14 27" src="https://github.com/user-attachments/assets/cf96766e-ac3d-499c-93d5-e6a4345dc310" />
+<img width="941" height="816" alt="スクリーンショット 2026-04-15 13 57 57" src="https://github.com/user-attachments/assets/78d2dde2-82bb-42f2-b2b6-6c2f17c812aa" />
+
 
 ---
 
