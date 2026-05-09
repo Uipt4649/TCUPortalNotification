@@ -341,3 +341,2636 @@
 [sample 2] 2026/04/11 14:22 | 夢キャンコミュニケーター新入生説明会と新入生交流会のお知らせ
 [sample 3] 2026/04/11 09:30 | SD PBL(1)の初回授業について
 [INFO] section_counts 伝言:3, 大学からのお知らせ:28, 教員からのお知らせ:9, 誰でも投稿:10
+[INFO] scraped notices: 0
+[INFO] auth alert push sent=0 failed=0 targets=0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 49
+[INFO] created=0 updated=49
+[INFO] No new notice documents. Push skipped.
+[sample 1] 2026/04/15 11:39 | 鉄道研究部新入部員募集中
+[sample 2] 2026/04/15 11:11 | キャリアより）【全学部・全学年対象】4/15(水）2026 夏期 海外インターンシップ 募集ガイダンス実施案内
+[sample 3] 2026/04/15 11:10 | SCキャリアより）4/15(水)就活基礎講座②AIでつくる自己PR・ガクチカ作成【ライブ配信】
+[INFO] section_counts 伝言:2, 大学からのお知らせ:31, 教員からのお知らせ:4, 誰でも投稿:12
+[INFO] scraped notices: 49
+[INFO] created=0 updated=49
+[INFO] No new notice documents. Push skipped.
+[sample 1] 2026/04/15 11:39 | 鉄道研究部新入部員募集中
+[sample 2] 2026/04/15 11:11 | キャリアより）【全学部・全学年対象】4/15(水）2026 夏期 海外インターンシップ 募集ガイダンス実施案内
+[sample 3] 2026/04/15 11:10 | SCキャリアより）4/15(水)就活基礎講座②AIでつくる自己PR・ガクチカ作成【ライブ配信】
+[INFO] section_counts 伝言:2, 大学からのお知らせ:31, 教員からのお知らせ:4, 誰でも投稿:12
+[INFO] scraped notices: 49
+[INFO] created=0 updated=49
+[INFO] No new notice documents. Push skipped.
+[sample 1] 2026/04/15 11:39 | 鉄道研究部新入部員募集中
+[sample 2] 2026/04/15 11:11 | キャリアより）【全学部・全学年対象】4/15(水）2026 夏期 海外インターンシップ 募集ガイダンス実施案内
+[sample 3] 2026/04/15 11:10 | SCキャリアより）4/15(水)就活基礎講座②AIでつくる自己PR・ガクチカ作成【ライブ配信】
+[INFO] section_counts 伝言:2, 大学からのお知らせ:31, 教員からのお知らせ:4, 誰でも投稿:12
+[INFO] scraped notices: 49
+[INFO] created=0 updated=49
+[INFO] No new notice documents. Push skipped.
+[sample 1] 2026/04/15 11:39 | 鉄道研究部新入部員募集中
+[sample 2] 2026/04/15 11:11 | キャリアより）【全学部・全学年対象】4/15(水）2026 夏期 海外インターンシップ 募集ガイダンス実施案内
+[sample 3] 2026/04/15 11:10 | SCキャリアより）4/15(水)就活基礎講座②AIでつくる自己PR・ガクチカ作成【ライブ配信】
+[INFO] section_counts 伝言:2, 大学からのお知らせ:31, 教員からのお知らせ:4, 誰でも投稿:12
+[INFO] scraped notices: 49
+[INFO] created=1 updated=48
+[INFO] push sent=0 failed=0 targets=0
+[sample 1] 2026/04/15 16:12 | 履修登録システムのメンテナンスについて(4/15・随時更新）
+[sample 2] 2026/04/15 11:39 | 鉄道研究部新入部員募集中
+[sample 3] 2026/04/15 11:11 | キャリアより）【全学部・全学年対象】4/15(水）2026 夏期 海外インターンシップ 募集ガイダンス実施案内
+[INFO] section_counts 伝言:2, 大学からのお知らせ:31, 教員からのお知らせ:4, 誰でも投稿:12
+[INFO] scraped notices: 49
+[INFO] created=0 updated=49
+[INFO] No new notice documents. Push skipped.
+[sample 1] 2026/04/15 16:12 | 履修登録システムのメンテナンスについて(4/15・随時更新）
+[sample 2] 2026/04/15 11:39 | 鉄道研究部新入部員募集中
+[sample 3] 2026/04/15 11:11 | キャリアより）【全学部・全学年対象】4/15(水）2026 夏期 海外インターンシップ 募集ガイダンス実施案内
+[INFO] section_counts 伝言:2, 大学からのお知らせ:31, 教員からのお知らせ:4, 誰でも投稿:12
+[INFO] scraped notices: 0
+[INFO] auth alert push sent=0 failed=0 targets=0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=microsoft_login_page_detected_after_session
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 49
+[INFO] created=0 updated=49
+[INFO] No new notice documents. Push skipped.
+[sample 1] 2026/04/17 18:41 | キャリアより）公務員ガイダンスのご案内（4/23(木)開催!）
+[sample 2] 2026/04/17 17:24 | 各教室の照明・空調の自動電源オフ設定について
+[sample 3] 2026/04/17 16:29 | 【明日開催！】夢キャンコミュニケーター新入生交流会のお知らせ
+[INFO] section_counts 伝言:2, 大学からのお知らせ:29, 教員からのお知らせ:2, 誰でも投稿:16
+[INFO] scraped notices: 49
+[INFO] created=0 updated=49
+[INFO] No new notice documents. Push skipped.
+[sample 1] 2026/04/17 18:41 | キャリアより）公務員ガイダンスのご案内（4/23(木)開催!）
+[sample 2] 2026/04/17 17:24 | 各教室の照明・空調の自動電源オフ設定について
+[sample 3] 2026/04/17 16:29 | 【明日開催！】夢キャンコミュニケーター新入生交流会のお知らせ
+[INFO] section_counts 伝言:2, 大学からのお知らせ:29, 教員からのお知らせ:2, 誰でも投稿:16
+[INFO] scraped notices: 49
+[INFO] created=0 updated=49
+[INFO] No new notice documents. Push skipped.
+[sample 1] 2026/04/17 18:41 | キャリアより）公務員ガイダンスのご案内（4/23(木)開催!）
+[sample 2] 2026/04/17 17:24 | 各教室の照明・空調の自動電源オフ設定について
+[sample 3] 2026/04/17 16:29 | 【明日開催！】夢キャンコミュニケーター新入生交流会のお知らせ
+[INFO] section_counts 伝言:2, 大学からのお知らせ:29, 教員からのお知らせ:2, 誰でも投稿:16
+[INFO] scraped notices: 49
+[INFO] created=0 updated=49
+[INFO] No new notice documents. Push skipped.
+[sample 1] 2026/04/17 18:41 | キャリアより）公務員ガイダンスのご案内（4/23(木)開催!）
+[sample 2] 2026/04/17 17:24 | 各教室の照明・空調の自動電源オフ設定について
+[sample 3] 2026/04/17 16:29 | 【明日開催！】夢キャンコミュニケーター新入生交流会のお知らせ
+[INFO] section_counts 伝言:2, 大学からのお知らせ:29, 教員からのお知らせ:2, 誰でも投稿:16
+[INFO] scraped notices: 49
+[INFO] created=0 updated=49
+[INFO] No new notice documents. Push skipped.
+[sample 1] 2026/04/17 18:41 | キャリアより）公務員ガイダンスのご案内（4/23(木)開催!）
+[sample 2] 2026/04/17 17:24 | 各教室の照明・空調の自動電源オフ設定について
+[sample 3] 2026/04/17 16:29 | 【明日開催！】夢キャンコミュニケーター新入生交流会のお知らせ
+[INFO] section_counts 伝言:2, 大学からのお知らせ:29, 教員からのお知らせ:2, 誰でも投稿:16
+[INFO] scraped notices: 49
+[INFO] created=0 updated=49
+[INFO] No new notice documents. Push skipped.
+[sample 1] 2026/04/17 18:41 | キャリアより）公務員ガイダンスのご案内（4/23(木)開催!）
+[sample 2] 2026/04/17 17:24 | 各教室の照明・空調の自動電源オフ設定について
+[sample 3] 2026/04/17 16:29 | 【明日開催！】夢キャンコミュニケーター新入生交流会のお知らせ
+[INFO] section_counts 伝言:2, 大学からのお知らせ:29, 教員からのお知らせ:2, 誰でも投稿:16
+[INFO] scraped notices: 0
+[INFO] auth alert push sent=0 failed=0 targets=0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
+[INFO] scraped notices: 0
+[WARN] Portal auth required. Session expired or login page detected.
+[DEBUG] reason=login_flow_failed
+[NEXT] Run: python src/run_once.py --init-session
+[NEXT] Then run: python src/run_once.py
