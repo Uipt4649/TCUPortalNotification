@@ -127,3 +127,566 @@ Traceback (most recent call last):
   File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_base.py", line 231, in _retry_error_helper
     raise final_exc from source_exc
 google.api_core.exceptions.RetryError: Timeout of 300.0s exceeded, last exception: 503 errors resolving firestore.googleapis.com: [field:hostname lookup error:address lookup failed for firestore.googleapis.com: Could not contact DNS servers]
+Traceback (most recent call last):
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/src/run_once.py", line 159, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/src/run_once.py", line 87, in main
+    scrape_result = scrape_notices_with_status(config, limit=scrape_limit)
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/src/tcu_portal_scraper.py", line 92, in scrape_notices_with_status
+    browser = playwright.chromium.launch(headless=True)
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/playwright/sync_api/_generated.py", line 14475, in launch
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.launch(
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<17 lines>...
+        )
+        ^
+    )
+    ^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/playwright/_impl/_browser_type.py", line 98, in launch
+    await self._channel.send(
+        "launch", TimeoutSettings.launch_timeout, params
+    )
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: BrowserType.launch: Timeout 180000ms exceeded.
+Call log:
+  - <launching> /Users/ui/Library/Caches/ms-playwright/chromium_headless_shell-1179/chrome-mac/headless_shell --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AutoExpandDetailsElement,AvoidUnnecessaryBeforeUnloadCheckSync,CertificateTransparencyComponentUpdater,DestroyProfileOnBrowserClose,DialMediaRouteProvider,ExtensionManifestV2Disabled,GlobalMediaControls,HttpsUpgrades,ImprovedCookieControls,LazyFrameLoading,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --enable-automation --enable-use-zoom-for-dsf=false --use-angle --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/var/folders/5h/r3mkbl2n16l2_68m6v54n5j00000gn/T/playwright_chromiumdev_profile-UDQxQ8 --remote-debugging-pipe --no-startup-window
+  - <launched> pid=44661
+
+Traceback (most recent call last):
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/grpc_helpers.py", line 149, in error_remapped_callable
+    return _StreamingResponseIterator(
+        result, prefetch_first_result=prefetch_first
+    )
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/grpc_helpers.py", line 71, in __init__
+    self._stored_first_result = next(self._wrapped)
+                                ~~~~^^^^^^^^^^^^^^^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/grpc/_channel.py", line 538, in __next__
+    return self._next()
+           ~~~~~~~~~~^^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/grpc/_channel.py", line 956, in _next
+    raise self
+grpc._channel._MultiThreadedRendezvous: <_MultiThreadedRendezvous of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "errors resolving firestore.googleapis.com: [field:hostname lookup error:address lookup failed for firestore.googleapis.com: Timeout while contacting DNS servers]"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_status:14, grpc_message:"errors resolving firestore.googleapis.com: [field:hostname lookup error:address lookup failed for firestore.googleapis.com: Timeout while contacting DNS servers]"}"
+>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/grpc_helpers.py", line 153, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ServiceUnavailable: 503 errors resolving firestore.googleapis.com: [field:hostname lookup error:address lookup failed for firestore.googleapis.com: Timeout while contacting DNS servers]
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/src/run_once.py", line 159, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/src/run_once.py", line 91, in main
+    status_transition = update_portal_status(
+        db,
+        auth_required=scrape_result.auth_required,
+        reason=scrape_result.reason,
+    )
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/src/firestore_writer.py", line 90, in update_portal_status
+    prev = ref.get().to_dict() or {}
+           ~~~~~~~^^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/cloud/firestore_v1/document.py", line 413, in get
+    response_iter = self._client._firestore_api.batch_get_documents(
+        request=request,
+        metadata=self._client._rpc_metadata,
+        **kwargs,
+    )
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/cloud/firestore_v1/services/firestore/client.py", line 1223, in batch_get_documents
+    response = rpc(
+        request,
+    ...<2 lines>...
+        metadata=metadata,
+    )
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/gapic_v1/method.py", line 128, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+        target,
+    ...<3 lines>...
+        on_error=on_error,
+    )
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+        exc,
+    ...<6 lines>...
+        timeout,
+    )
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_base.py", line 231, in _retry_error_helper
+    raise final_exc from source_exc
+google.api_core.exceptions.RetryError: Timeout of 300.0s exceeded, last exception: 503 errors resolving firestore.googleapis.com: [field:hostname lookup error:address lookup failed for firestore.googleapis.com: Timeout while contacting DNS servers]
+Traceback (most recent call last):
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/src/run_once.py", line 159, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/src/run_once.py", line 87, in main
+    scrape_result = scrape_notices_with_status(config, limit=scrape_limit)
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/src/tcu_portal_scraper.py", line 92, in scrape_notices_with_status
+    browser = playwright.chromium.launch(headless=True)
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/playwright/sync_api/_generated.py", line 14475, in launch
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.launch(
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<17 lines>...
+        )
+        ^
+    )
+    ^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/playwright/_impl/_browser_type.py", line 98, in launch
+    await self._channel.send(
+        "launch", TimeoutSettings.launch_timeout, params
+    )
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: BrowserType.launch: Timeout 180000ms exceeded.
+Call log:
+  - <launching> /Users/ui/Library/Caches/ms-playwright/chromium_headless_shell-1179/chrome-mac/headless_shell --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AutoExpandDetailsElement,AvoidUnnecessaryBeforeUnloadCheckSync,CertificateTransparencyComponentUpdater,DestroyProfileOnBrowserClose,DialMediaRouteProvider,ExtensionManifestV2Disabled,GlobalMediaControls,HttpsUpgrades,ImprovedCookieControls,LazyFrameLoading,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --enable-automation --enable-use-zoom-for-dsf=false --use-angle --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/var/folders/5h/r3mkbl2n16l2_68m6v54n5j00000gn/T/playwright_chromiumdev_profile-eWoy6m --remote-debugging-pipe --no-startup-window
+  - <launched> pid=8624
+
+Traceback (most recent call last):
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/grpc_helpers.py", line 149, in error_remapped_callable
+    return _StreamingResponseIterator(
+        result, prefetch_first_result=prefetch_first
+    )
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/grpc_helpers.py", line 71, in __init__
+    self._stored_first_result = next(self._wrapped)
+                                ~~~~^^^^^^^^^^^^^^^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/grpc/_channel.py", line 538, in __next__
+    return self._next()
+           ~~~~~~~~~~^^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/grpc/_channel.py", line 956, in _next
+    raise self
+grpc._channel._MultiThreadedRendezvous: <_MultiThreadedRendezvous of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "errors resolving firestore.googleapis.com: [field:hostname lookup error:address lookup failed for firestore.googleapis.com: Timeout while contacting DNS servers]"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"errors resolving firestore.googleapis.com: [field:hostname lookup error:address lookup failed for firestore.googleapis.com: Timeout while contacting DNS servers]", grpc_status:14}"
+>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/grpc_helpers.py", line 153, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ServiceUnavailable: 503 errors resolving firestore.googleapis.com: [field:hostname lookup error:address lookup failed for firestore.googleapis.com: Timeout while contacting DNS servers]
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/src/run_once.py", line 159, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/src/run_once.py", line 91, in main
+    status_transition = update_portal_status(
+        db,
+        auth_required=scrape_result.auth_required,
+        reason=scrape_result.reason,
+    )
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/src/firestore_writer.py", line 90, in update_portal_status
+    prev = ref.get().to_dict() or {}
+           ~~~~~~~^^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/cloud/firestore_v1/document.py", line 413, in get
+    response_iter = self._client._firestore_api.batch_get_documents(
+        request=request,
+        metadata=self._client._rpc_metadata,
+        **kwargs,
+    )
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/cloud/firestore_v1/services/firestore/client.py", line 1223, in batch_get_documents
+    response = rpc(
+        request,
+    ...<2 lines>...
+        metadata=metadata,
+    )
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/gapic_v1/method.py", line 128, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+        target,
+    ...<3 lines>...
+        on_error=on_error,
+    )
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+        exc,
+    ...<6 lines>...
+        timeout,
+    )
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_base.py", line 231, in _retry_error_helper
+    raise final_exc from source_exc
+google.api_core.exceptions.RetryError: Timeout of 300.0s exceeded, last exception: 503 errors resolving firestore.googleapis.com: [field:hostname lookup error:address lookup failed for firestore.googleapis.com: Timeout while contacting DNS servers]
+Traceback (most recent call last):
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/grpc_helpers.py", line 55, in error_remapped_callable
+    return callable_(*args, **kwargs)
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/grpc/_interceptor.py", line 276, in __call__
+    response, ignored_call = self._with_call(
+                             ~~~~~~~~~~~~~~~^
+        request,
+        ^^^^^^^^
+    ...<4 lines>...
+        compression=compression,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/grpc/_interceptor.py", line 331, in _with_call
+    return call.result(), call
+           ~~~~~~~~~~~^^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/grpc/_channel.py", line 438, in result
+    raise self
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/grpc/_interceptor.py", line 314, in continuation
+    response, call = self._thunk(new_method).with_call(
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        request,
+        ^^^^^^^^
+    ...<4 lines>...
+        compression=new_compression,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/grpc/_channel.py", line 1173, in with_call
+    return _end_unary_response_blocking(state, call, True, None)
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/grpc/_channel.py", line 990, in _end_unary_response_blocking
+    raise _InactiveRpcError(state)  # pytype: disable=not-instantiable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.DEADLINE_EXCEEDED
+	details = "Deadline Exceeded"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Deadline Exceeded", grpc_status:4}"
+>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/src/run_once.py", line 159, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/src/run_once.py", line 121, in main
+    result = upsert_notices(
+        db=db,
+        notices=notices,
+        collection_name=os.environ["FIRESTORE_COLLECTION"],
+    )
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/src/firestore_writer.py", line 48, in upsert_notices
+    ref.set(payload, merge=True)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/cloud/firestore_v1/document.py", line 169, in set
+    write_results = batch.commit(**kwargs)
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/cloud/firestore_v1/batch.py", line 63, in commit
+    commit_response = self._client._firestore_api.commit(
+        request=request,
+        metadata=self._client._rpc_metadata,
+        **kwargs,
+    )
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/cloud/firestore_v1/services/firestore/client.py", line 1451, in commit
+    response = rpc(
+        request,
+    ...<2 lines>...
+        metadata=metadata,
+    )
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/gapic_v1/method.py", line 128, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+        target,
+    ...<3 lines>...
+        on_error=on_error,
+    )
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+        exc,
+    ...<6 lines>...
+        timeout,
+    )
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_base.py", line 216, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/grpc_helpers.py", line 57, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.DeadlineExceeded: 504 Deadline Exceeded
+Traceback (most recent call last):
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/grpc_helpers.py", line 149, in error_remapped_callable
+    return _StreamingResponseIterator(
+        result, prefetch_first_result=prefetch_first
+    )
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/grpc_helpers.py", line 71, in __init__
+    self._stored_first_result = next(self._wrapped)
+                                ~~~~^^^^^^^^^^^^^^^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/grpc/_channel.py", line 538, in __next__
+    return self._next()
+           ~~~~~~~~~~^^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/grpc/_channel.py", line 939, in _next
+    raise self
+grpc._channel._MultiThreadedRendezvous: <_MultiThreadedRendezvous of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "errors resolving firestore.googleapis.com: [field:hostname lookup error:address lookup failed for firestore.googleapis.com: Could not contact DNS servers]"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"errors resolving firestore.googleapis.com: [field:hostname lookup error:address lookup failed for firestore.googleapis.com: Could not contact DNS servers]", grpc_status:14}"
+>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/grpc_helpers.py", line 153, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ServiceUnavailable: 503 errors resolving firestore.googleapis.com: [field:hostname lookup error:address lookup failed for firestore.googleapis.com: Could not contact DNS servers]
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/src/run_once.py", line 159, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/src/run_once.py", line 91, in main
+    status_transition = update_portal_status(
+        db,
+        auth_required=scrape_result.auth_required,
+        reason=scrape_result.reason,
+    )
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/src/firestore_writer.py", line 90, in update_portal_status
+    prev = ref.get().to_dict() or {}
+           ~~~~~~~^^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/cloud/firestore_v1/document.py", line 413, in get
+    response_iter = self._client._firestore_api.batch_get_documents(
+        request=request,
+        metadata=self._client._rpc_metadata,
+        **kwargs,
+    )
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/cloud/firestore_v1/services/firestore/client.py", line 1223, in batch_get_documents
+    response = rpc(
+        request,
+    ...<2 lines>...
+        metadata=metadata,
+    )
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/gapic_v1/method.py", line 128, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+        target,
+    ...<3 lines>...
+        on_error=on_error,
+    )
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+        exc,
+    ...<6 lines>...
+        timeout,
+    )
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_base.py", line 231, in _retry_error_helper
+    raise final_exc from source_exc
+google.api_core.exceptions.RetryError: Timeout of 300.0s exceeded, last exception: 503 errors resolving firestore.googleapis.com: [field:hostname lookup error:address lookup failed for firestore.googleapis.com: Could not contact DNS servers]
+Traceback (most recent call last):
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/grpc_helpers.py", line 55, in error_remapped_callable
+    return callable_(*args, **kwargs)
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/grpc/_interceptor.py", line 276, in __call__
+    response, ignored_call = self._with_call(
+                             ~~~~~~~~~~~~~~~^
+        request,
+        ^^^^^^^^
+    ...<4 lines>...
+        compression=compression,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/grpc/_interceptor.py", line 331, in _with_call
+    return call.result(), call
+           ~~~~~~~~~~~^^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/grpc/_channel.py", line 438, in result
+    raise self
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/grpc/_interceptor.py", line 314, in continuation
+    response, call = self._thunk(new_method).with_call(
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        request,
+        ^^^^^^^^
+    ...<4 lines>...
+        compression=new_compression,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/grpc/_channel.py", line 1173, in with_call
+    return _end_unary_response_blocking(state, call, True, None)
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/grpc/_channel.py", line 990, in _end_unary_response_blocking
+    raise _InactiveRpcError(state)  # pytype: disable=not-instantiable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.DEADLINE_EXCEEDED
+	details = "Deadline Exceeded"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Deadline Exceeded", grpc_status:4}"
+>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/src/run_once.py", line 159, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/src/run_once.py", line 91, in main
+    status_transition = update_portal_status(
+        db,
+        auth_required=scrape_result.auth_required,
+        reason=scrape_result.reason,
+    )
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/src/firestore_writer.py", line 93, in update_portal_status
+    ref.set(
+    ~~~~~~~^
+        {
+        ^
+    ...<4 lines>...
+        merge=True,
+        ^^^^^^^^^^^
+    )
+    ^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/cloud/firestore_v1/document.py", line 169, in set
+    write_results = batch.commit(**kwargs)
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/cloud/firestore_v1/batch.py", line 63, in commit
+    commit_response = self._client._firestore_api.commit(
+        request=request,
+        metadata=self._client._rpc_metadata,
+        **kwargs,
+    )
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/cloud/firestore_v1/services/firestore/client.py", line 1451, in commit
+    response = rpc(
+        request,
+    ...<2 lines>...
+        metadata=metadata,
+    )
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/gapic_v1/method.py", line 128, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+        target,
+    ...<3 lines>...
+        on_error=on_error,
+    )
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+        exc,
+    ...<6 lines>...
+        timeout,
+    )
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_base.py", line 216, in _retry_error_helper
+    raise final_exc from source_exc
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target
+    result = target()
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/google/api_core/grpc_helpers.py", line 57, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.DeadlineExceeded: 504 Deadline Exceeded
+Traceback (most recent call last):
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/src/run_once.py", line 159, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/src/run_once.py", line 87, in main
+    scrape_result = scrape_notices_with_status(config, limit=scrape_limit)
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/src/tcu_portal_scraper.py", line 92, in scrape_notices_with_status
+    browser = playwright.chromium.launch(headless=True)
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/playwright/sync_api/_generated.py", line 14475, in launch
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.launch(
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<17 lines>...
+        )
+        ^
+    )
+    ^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/playwright/_impl/_browser_type.py", line 98, in launch
+    await self._channel.send(
+        "launch", TimeoutSettings.launch_timeout, params
+    )
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: BrowserType.launch: Timeout 180000ms exceeded.
+Call log:
+  - <launching> /Users/ui/Library/Caches/ms-playwright/chromium_headless_shell-1179/chrome-mac/headless_shell --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AutoExpandDetailsElement,AvoidUnnecessaryBeforeUnloadCheckSync,CertificateTransparencyComponentUpdater,DestroyProfileOnBrowserClose,DialMediaRouteProvider,ExtensionManifestV2Disabled,GlobalMediaControls,HttpsUpgrades,ImprovedCookieControls,LazyFrameLoading,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --enable-automation --enable-use-zoom-for-dsf=false --use-angle --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/var/folders/5h/r3mkbl2n16l2_68m6v54n5j00000gn/T/playwright_chromiumdev_profile-J1963T --remote-debugging-pipe --no-startup-window
+  - <launched> pid=15308
+
+Traceback (most recent call last):
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/src/run_once.py", line 159, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/src/run_once.py", line 87, in main
+    scrape_result = scrape_notices_with_status(config, limit=scrape_limit)
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/src/tcu_portal_scraper.py", line 92, in scrape_notices_with_status
+    browser = playwright.chromium.launch(headless=True)
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/playwright/sync_api/_generated.py", line 14475, in launch
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.launch(
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<17 lines>...
+        )
+        ^
+    )
+    ^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/playwright/_impl/_sync_base.py", line 115, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/playwright/_impl/_browser_type.py", line 98, in launch
+    await self._channel.send(
+        "launch", TimeoutSettings.launch_timeout, params
+    )
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 69, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/ui/Desktop/LifelsTech/TCUPortalNotification/backend/.venv/lib/python3.13/site-packages/playwright/_impl/_connection.py", line 558, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: BrowserType.launch: Timeout 180000ms exceeded.
+Call log:
+  - <launching> /Users/ui/Library/Caches/ms-playwright/chromium_headless_shell-1179/chrome-mac/headless_shell --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AutoExpandDetailsElement,AvoidUnnecessaryBeforeUnloadCheckSync,CertificateTransparencyComponentUpdater,DestroyProfileOnBrowserClose,DialMediaRouteProvider,ExtensionManifestV2Disabled,GlobalMediaControls,HttpsUpgrades,ImprovedCookieControls,LazyFrameLoading,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --enable-automation --enable-use-zoom-for-dsf=false --use-angle --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/var/folders/5h/r3mkbl2n16l2_68m6v54n5j00000gn/T/playwright_chromiumdev_profile-JKBjgE --remote-debugging-pipe --no-startup-window
+  - <launched> pid=17469
+
